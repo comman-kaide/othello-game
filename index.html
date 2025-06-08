@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オセロゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>オセロゲーム</h1>
+        
+        <div class="game-info">
+            <div class="score-board">
+                <div class="score">
+                    <span class="disc black"></span>
+                    <span id="black-score">2</span>
+                </div>
+                <div class="score">
+                    <span class="disc white"></span>
+                    <span id="white-score">2</span>
+                </div>
+            </div>
+            
+            <div class="turn-indicator">
+                現在のターン: <span id="current-player">黒</span>
+            </div>
+            
+            <div class="message" id="message"></div>
+        </div>
+        
+        <div class="board" id="board"></div>
+        
+        <div class="controls">
+            <button id="new-game-btn">新しいゲーム</button>
+            <button id="pass-btn">パス</button>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
